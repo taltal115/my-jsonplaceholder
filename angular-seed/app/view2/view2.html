@@ -5,7 +5,7 @@
   <option value={{x.id}} ng-repeat="x in names">{{x.title}}</option>
 </select>
 <div class="results-thumbnail">
-  <div id="thumbnail" ng-repeat="t in tmpArr | limitTo:11">
+  <div id="thumbnail" ng-repeat="t in tmpArr | limitTo:11 | orderBy : -title">
     <span class="thumb-title">{{t.title}}</span>
     <a href="#" target="_blank"><img ng-src="{{t.thumbnailUrl}}" alt=""></a>
   </div>
