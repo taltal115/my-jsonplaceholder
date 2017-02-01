@@ -1,0 +1,54 @@
+/* app css stylesheet */
+#loader{
+  font-size: 40px;
+  position: fixed;
+  margin: auto auto;
+  top: 0;
+  background: #333;
+  text-align: center;
+  width: 100%;
+  line-height: 10;
+  height: 100%;
+  color: #fff;
+  opacity: 0.5;
+}
+#thumbnail {
+  float: left;
+}
+.results-thumbnail{
+  margin:50px 0;
+}
+.thumb-title{
+  display: none;
+}
+#thumbnail:hover .thumb-title{
+  display: block;
+  position: absolute;
+  text-overflow: ellipsis;
+  width: 150px;
+  text-align: center;
+  margin: 20px 0px;
+}
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li + li:before {
+  content: "|";
+  padding-right: 0.3em;
+}

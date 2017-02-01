@@ -1,0 +1,12 @@
+<div id="loader" style="{{display}}">Loading</div>
+
+<h3>Select an album</h3>
+<select class="form-control" ng-model="selectAlbum" ng-change="changedValue(selectAlbum)">
+  <option value={{x.id}} ng-repeat="x in names">{{x.title}}</option>
+</select>
+<div class="results-thumbnail">
+  <div id="thumbnail" ng-repeat="t in tmpArr | limitTo:11">
+    <span class="thumb-title">{{t.title}}</span>
+    <a href="#" target="_blank"><img ng-src="{{t.thumbnailUrl}}" alt=""></a>
+  </div>
+</div>
